@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,700&display=swap");
+
+$blue: #08f7fe;
+$green: #09fbd3;
+$pink: #fe5ebb;
+$yellow: #f5d300;
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: black;
+  font-family: "Open Sans", sans-serif;
+}
+
+div#root {
+  height: 100%;
+}
+
+.calculator {
+  margin: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.result {
+  padding: 1rem;
+  font-size: 12rem;
+  font-weight: 700;
+  color: $pink;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 4rem;
+}
+
+button {
+  background-color: #cad3c8;
+  width: 100%;
+  border: 0;
+  padding: 1rem;
+  color: #f2f2f2;
+  font-weight: 300;
+  font-size: 4rem;
+  flex-grow: 1;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.add {
+  background-color: $blue;
+}
+
+.add:hover {
+  background-color: $blue
+}
+
+.add:active {
+  color: darken($blue, 20);
+}
+
+.subtract {
+  background-color: $green;
+}
+
+.subtract:hover {
+  background-color: $green;
+}
+
+.subtract:active {
+  color: darken($green, 20);
+}
+
+.multiply {
+  background-color: $yellow;
+}
+
+.multiply:hover {
+  background-color: $yellow;
+}
+
+.multiply:active {
+  color: darken($yellow, 20);
+}
